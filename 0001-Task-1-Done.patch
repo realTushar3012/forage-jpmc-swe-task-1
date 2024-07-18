@@ -1,0 +1,290 @@
+From 6993927828890394b06208f251e316a826d07ec7 Mon Sep 17 00:00:00 2001
+From: Tushar Chaturvedi <tusharchaturvedisgp@gmail.com>
+Date: Thu, 18 Jul 2024 04:14:50 -0500
+Subject: [PATCH] Task 1 Done!
+
+---
+ .idea/.gitignore                              |   8 +++
+ .idea/forage-jpmc-swe-task-1.iml              |  10 ++++
+ .../inspectionProfiles/profiles_settings.xml  |   6 ++
+ .idea/misc.xml                                |   4 ++
+ .idea/modules.xml                             |   8 +++
+ .idea/vcs.xml                                 |   6 ++
+ __pycache__/client3.cpython-311.pyc           | Bin 0 -> 1937 bytes
+ __pycache__/client_test.cpython-311.pyc       | Bin 0 -> 2498 bytes
+ client3.py                                    |  15 +++--
+ client_test.py                                |  52 +++++++++++++-----
+ 10 files changed, 89 insertions(+), 20 deletions(-)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/forage-jpmc-swe-task-1.iml
+ create mode 100644 .idea/inspectionProfiles/profiles_settings.xml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 __pycache__/client3.cpython-311.pyc
+ create mode 100644 __pycache__/client_test.cpython-311.pyc
+
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+index 0000000..13566b8
+--- /dev/null
++++ b/.idea/.gitignore
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+diff --git a/.idea/forage-jpmc-swe-task-1.iml b/.idea/forage-jpmc-swe-task-1.iml
+new file mode 100644
+index 0000000..74d515a
+--- /dev/null
++++ b/.idea/forage-jpmc-swe-task-1.iml
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$">
++      <excludeFolder url="file://$MODULE_DIR$/venv" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+index 0000000..105ce2d
+--- /dev/null
++++ b/.idea/inspectionProfiles/profiles_settings.xml
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+index 0000000..0823e4d
+--- /dev/null
++++ b/.idea/misc.xml
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (forage-jpmc-swe-task-1)" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+index 0000000..973696f
+--- /dev/null
++++ b/.idea/modules.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/forage-jpmc-swe-task-1.iml" filepath="$PROJECT_DIR$/.idea/forage-jpmc-swe-task-1.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+index 0000000..35eb1dd
+--- /dev/null
++++ b/.idea/vcs.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/__pycache__/client3.cpython-311.pyc b/__pycache__/client3.cpython-311.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..5eadd4100a8a7e1ec9d202bff23f951b5e17dd60
+GIT binary patch
+literal 1937
+zcmaJ>O>7fK6rS<^cpckG9FowGt-4U9U`pZyM3qLNRUi(f5>W!>Co77z@l28pw%6>g
+zLAZ`&RXrGqgDW9nwN%QXN~yS@swy0*#HlAQvWm58rAR$-vqVpv`eq%+2~ydadHdeX
+zn{VFV%unHP2ZHbYzbZ@b1rYj&39T=@#k~3xBXkcDL~shJ%|BMLC;L>6_*9;7szCT}
+zkSY=ZsGmwiyyj#3%|CpI24HkhVFPd;!f1ZGrD^o#V>JkRXf@Q*pxkQ92DIMUn%()Q
+z{Cd|;xy1txUTvQQ(+^uqX!p6hrS<M@wH?gHTlTAw0Me1#LnGipOx*(~i*(O!)GItf
+zYOmU-_N#m8UfM%@Cjk*O-ywe5`#mNS?E@O1{XjeDUZBAr0=qFVx-;tS2m$re9ugkd
+zwh*MwwzL6pf9S=YDda`;hR1;P8^Pxxo99uq>m^f~&F^2a?d(J>mNJrBYQ?bZiSg0#
+z(b)AIHE(^YlM`R9>Hk7JliM+cUEmesV7&Sc$URg5#I_Y{*xsQFYrggx;oAIeFV}o;
+z?Bd&+Z`s8ad<8BKRuCZ{L}-mKU^Y|Wmw50|%ugtDra^K^s%WW{Vk{~43RN<c5=xXC
+zS}I2^#Ws{>nxUp<gOWltTgw`H##UUxvW?_5*KZry#G+1IA#3VM+LSfx+DjJcD0YRV
+zl%d&C!4<CO44axPIBozoB%1mG&~36NWCU3P5QTlOKaX9osA<LQoVB8v$ra7cnKvlW
+zW79@5m!=upik;T&&vJ{gCBxK~>F{bcogB7q(qS7ghsR>clnz?QMzXiu&@#2B!S*?3
+zyUDJM!VbFxq=+^{k@CSiv&Hz|-F;<RIaBNZVEtyTKjw6g*1AWFXZ~lp9`3IUIN<~9
+zniD!$jMszR<!EK$flv(&SNY*r0F9E{<pu)dy|R#jfwI5^Z#@M*;yVvzQot-pkQgq1
+zKsilq1%j>{EG=HB5}KlA$QHk-m<(_BXB73h{;l;EvuLq3MKRec;Y#59Ifi8Rf_NB)
+zH3$U!_IH-|e_bdR>QZM(tOt9_mz<zn<z<t-9j=r}q%}R0NaX$VEOkW52Nca#4nguJ
+z^5PK%qCAn8jx;Trc#WfZ$va0GvRrQJ<SCb%j?Y8~Tz=IuGOlQX^+ww5%$cc_zBpo1
+zxI~uiicQ%S<}bw0Ex35rOOIzOGa;j;X(HkBI@FFU0LC(Pal#d#s)*(KTPS`&F|rhn
+zfnrE&w#%DTBd+Kbo#l#Nge;Ri>Rt(&5NTwx7u72}uX>>}B5Z<r?}hHQG?|9$k)ofN
+zAHp2Fw^jydgToj%4kH{Y23f14aM5dZ)K_iwhKK@3iURxusfZh*h({V|oAmPd-3Hnw
+z-G~pB^3S<}DmSnhj+DMA50!^1_}fEw58b|c=V}9W2&Zt9mT)~XSnj>MuQGFg_Jw@(
+zxqS4|@yC<DOg;@i6`zHF?|Rnd9Gj~hn{(v(nmqqPzW7|e=*X9A@?|HoP>U>-#7*f`
+zJ+cQ<-Z$7lTz~*FqosI#?8GDa33bM%Yh%++XrvS`e_YWY^ws74rJ3^a+h^;cNGV>5
+zKgqH7RA;R^uWt1#TD94G7M)PC7D`sVzA1%ELTR-!UKwAXd2sy4vyVP{GW6>SXK<=E
+dIOTLsInv3Rbh7I8#sK2?K@1vv+hH#s{{a-s;->%r
+
+literal 0
+HcmV?d00001
+
+diff --git a/__pycache__/client_test.cpython-311.pyc b/__pycache__/client_test.cpython-311.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..7e222831719215737dda766f10453fd2d404b229
+GIT binary patch
+literal 2498
+zcmds3&2JM&6rcUF*U2W3P>O9Jq-oW}MM><~#v}q1NP?+U3>4^x)v#T>OIYHMu)8j;
+zWlO0Pq*UsG8##cKQ%DpE<%p{O2~@HpOITY~O4S33+Jmd~lvCdue?S^qRQ1-`+26i-
+z@6DUv&OE>Mqqepd0`0pW7j7^jA-~|D(S*9NWq@#>s6=IwB#uuu$)wmgo8saeLs$|e
+zDmO<|UL&{o#^fcAkX5*AEiPydRhVXRWOT3uJe_qDSps3TF(3@Aa+%&f$0llHKGv3|
+zG;3V3l#3ZXZP_A>K2$6{lW5KYfvFF+dO)}jE5sR<#95V@BXLe;0eKhY85dOkGVuv^
+z%UDv^($*Etv=WWk7zCLi^R34K@ZOBds@wxs<yAp-P|2x^s_TKEwy3Rji=?*IE$wKT
+zVhfCm<e70Y87i>WOVRV}5{y=xn$KXz3S5CN2n9!;&kH$NQ{9tm1+6nr7Mp&cZnnH5
+z?_7etT&4SoYKD9pRtdb--q_R+PoaHqZFKV;Fs!h)Fk|Qm&E`!#r)_(O{DI+q|4@G*
+z&^<IX;y*SL^bdq1L!of+`H{Q7UV7366H_p8yWKw!@DC41LdS+9kx0PiPM;ZD5p1WG
+znUNK9+ICrb3U*FO&D3<)b=79!7ECLXn122ngt|Ko!7wA9pZhuY#^XDaqnnptWOL&a
+zXE%}i3Txm-+pUUeYKAp&JF6sDM4+lAZ`h98*^H%`wm_f8o9O6*Rpi?HxPU}WG%$tj
+zcJ0d<En#VOy9wD$y6bH_Hh2{lFbA!yc~dbGHx(;ue4(lO;CLpHO+gZvgHhc&m%ToC
+zBV#C2TK}z?RHEO!qxD;`On+c7K~qHrKGwj@S9UiF^2=E%CzNC&n^Y|AB5rr?=!@hU
+zc%8EYsBV1^FiSRide=IO?hy7dxzf|O_IA;I4Ew2A@zZNnj%oXxsS?BuFut|JwWsI~
+zV?TMm_{k)?%G4FmDRj2XJE{_Konb2b4^|213Q?G!_$hGmiB<}XmjmM^X<&Zh-tdCH
+zyuZ@byX-4<1=ntu4j-S7RiwSoq(ke{p@pl9v62)lOTi-TRc9m87VszkyWi2%$x#C{
+z$#5Y^2yF=M2zwCrB6J`eKyV{?5WENn5e^|7MmPenBQuS6L1PDAmmz0#HEL*(T*j4~
+zO8T@pojdU_@@v=ZeaNK`!3VJ8&@dNi@!JLgi(diCUx9^E1moS!Lf?AJGf>=ilqJ+)
+zDch-q63;<Yo<?n!utpSo{&Uow1r(z3|AnK<?_!6ARESMcM%~v&YX?iu6xsSXqYEAe
+z7B*X|Rj&8VSSGE3r5lw_TA^g6AzU|cm!KBaPP?sf+VmrqbHCywsig-dnco1+l1k@+
+zd1s~54IoO-MEAPre&}B8U5=DI!Llc~_VJTDrSRF37%hv@q8Qzvo}K&Z?w)ng^RRC*
+zvK%dWLuGHMB!<gkxG07<sLS7ny;Kq-Wie80beb+PpTibqIjy8LS+-kbIh9efNt7j7
+z#tL4u7`?#UIEvs0SgGY2-2nrWi~|0}FwX+aHm@q%DnM;&g10GAotFqBRlZd?jxK)%
+z%8v#{hABl)%d$_j#cW!)aMNvPt&RujXQy_8;uSEADe!rqtO7vB=5eYKLYDXgp`^FP
+z6SWsTWsHChKg=e6tf9^_Ooi;3rB{W#SA12kI{Fx3yBqGg%N;$xqv4Mi){hv%OY^yP
+d&Qs((6~1Hk+}!!EFU(z-rB{_BycZ0V+n)@gW3>PP
+
+literal 0
+HcmV?d00001
+
+diff --git a/client3.py b/client3.py
+index 3fc09b7..bb70d82 100644
+--- a/client3.py
++++ b/client3.py
+@@ -30,19 +30,20 @@ N = 500
+ 
+ 
+ def getDataPoint(quote):
+-    """ Produce all the needed values to generate a datapoint """
+-    """ ------------- Update this function ------------- """
++    """ Produce all of the needed values to generate a datapoint """
+     stock = quote['stock']
+     bid_price = float(quote['top_bid']['price'])
+     ask_price = float(quote['top_ask']['price'])
+-    price = bid_price
++    price = (bid_price + ask_price) / 2
+     return stock, bid_price, ask_price, price
+ 
+ 
++
+ def getRatio(price_a, price_b):
+     """ Get ratio of price_a and price_b """
+-    """ ------------- Update this function ------------- """
+-    return 1
++    if price_b == 0:
++        return
++    return price_a / price_b
+ 
+ 
+ # Main
+@@ -52,8 +53,10 @@ if __name__ == "__main__":
+         quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
+ 
+         """ ----------- Update to get the ratio --------------- """
++        prices = {}
+         for quote in quotes:
+             stock, bid_price, ask_price, price = getDataPoint(quote)
++            prices[stock] = price
+             print("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
+ 
+-        print("Ratio %s" % getRatio(price, price))
++        print("Ratio %s" % getRatio(prices["ABC"], prices["DEF"]))
+diff --git a/client_test.py b/client_test.py
+index af2bf26..c8a8f1d 100644
+--- a/client_test.py
++++ b/client_test.py
+@@ -1,24 +1,48 @@
+ import unittest
+-from client3 import getDataPoint
++from client3 import getDataPoint, getRatio
++
+ 
+ class ClientTest(unittest.TestCase):
+-  def test_getDataPoint_calculatePrice(self):
+-    quotes = [
+-      {'top_ask': {'price': 121.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
+-      {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+-    ]
+-    """ ------------ Add the assertion below ------------ """
++    def test_getDataPoint_calculatePrice(self):
++        quotes = [
++            {'top_ask': {'price': 121.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453',
++             'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
++            {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453',
++             'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
++        ]
++        """ ------------ Add the assertion below ------------ """
++        for quote in quotes:
++            stock, bid_price, ask_price, price = getDataPoint(quote)
++            expected_price = (bid_price + ask_price) / 2
++            self.assertEqual(price, expected_price)
++
++    def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
++        quotes = [
++            {'top_ask': {'price': 119.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453',
++             'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
++            {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453',
++             'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
++        ]
++        """ ------------ Add the assertion below ------------ """
++        for quote in quotes:
++            stock, bid_price, ask_price, price = getDataPoint(quote)
++            expected_price = (bid_price + ask_price) / 2
++            self.assertEqual(price, expected_price)
+ 
+-  def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
+-    quotes = [
+-      {'top_ask': {'price': 119.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
+-      {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+-    ]
+-    """ ------------ Add the assertion below ------------ """
++    """ ------------ Add more unit tests ------------ """
+ 
++    def test_getRatio(self):
++        price_a = 120.5
++        price_b = 121.68
++        self.assertEqual(getRatio(price_a, price_b), price_a / price_b)
+ 
+-  """ ------------ Add more unit tests ------------ """
++        price_a = 117.87
++        price_b = 0
++        self.assertIsNone(getRatio(price_a, price_b))
+ 
++        price_a = 0
++        price_b = 121.68
++        self.assertEqual(getRatio(price_a, price_b), 0)
+ 
+ 
+ if __name__ == '__main__':
+-- 
+2.45.2
+
